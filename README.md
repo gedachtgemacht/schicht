@@ -6,6 +6,8 @@ schicht. is a shift calendar for rotating shift work: early, late and night shif
 
 ![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue) ![PWA](https://img.shields.io/badge/PWA-installable-5a4fcf) ![Offline](https://img.shields.io/badge/offline-yes-2e7d32) ![No dependencies](https://img.shields.io/badge/dependencies-none-lightgrey)
 
+**Try it:** https://gedachtgemacht.github.io/schicht/ (works in any phone browser, install via "Add to Home Screen")
+
 The app interface is in German.
 
 If you work rotating shifts, you want to know quickly what a day holds, when the next free weekend is and how many nights this month has. Shift calendar apps often show ads for this, want an account, or put patterns, calendar export and statistics behind a pro purchase or a subscription. schicht. is a shift calendar without any of that: you enter your repeating pattern, the calendar shows early, late, night, off and vacation, and a file brings the schedule into your device calendar.
