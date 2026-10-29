@@ -1,96 +1,104 @@
 # schicht.
 
-**Welche Schicht habe ich am 14. März?** schicht. zeigt es dir, nachdem du dein Muster einmal eingetragen hast.
+**Which shift am I on, on March 14?** schicht. tells you, once you have entered your pattern.
 
-Wer in Wechselschicht arbeitet, will schnell wissen, was an einem Tag ansteht, wann das nächste freie Wochenende kommt und wie viele Nächte dieser Monat hat. Schichtkalender-Apps zeigen dafür oft Werbung, wollen ein Konto oder legen Muster, Kalender-Export und Statistik hinter einen Pro-Kauf oder ein Abo. schicht. ist ein Schichtkalender ohne das alles: Du trägst dein Wiederholmuster ein, der Kalender zeigt Früh, Spät, Nacht, frei und Urlaub, und eine Datei bringt den Plan in deinen Gerätekalender.
+schicht. is a shift calendar for rotating shift work: early, late and night shifts, days off and vacation, team view, shift swaps and calendar export. It runs offline in the browser as a PWA, with no account and no ads, and everything stays on your phone.
 
-Reine Rechnung, keine KI, kein Server. Alles bleibt auf deinem Handy.
+![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue) ![PWA](https://img.shields.io/badge/PWA-installable-5a4fcf) ![Offline](https://img.shields.io/badge/offline-yes-2e7d32) ![No dependencies](https://img.shields.io/badge/dependencies-none-lightgrey)
+
+The app interface is in German.
+
+If you work rotating shifts, you want to know quickly what a day holds, when the next free weekend is and how many nights this month has. Shift calendar apps often show ads for this, want an account, or put patterns, calendar export and statistics behind a pro purchase or a subscription. schicht. is a shift calendar without any of that: you enter your repeating pattern, the calendar shows early, late, night, off and vacation, and a file brings the schedule into your device calendar.
+
+Plain arithmetic, no AI, no server. Everything stays on your phone.
 
 <p align="center">
-  <img src="bilder/1-uebersicht.png" width="240" alt="">
-  <img src="bilder/2-breit.png" width="480" alt="">
+  <img src="bilder/1-uebersicht.png" width="240" alt="Phone view of the today screen: today's late shift in orange, next shift, next day off, next free weekend, hours this month and the next 14 days">
+  <img src="bilder/2-breit.png" width="480" alt="Desktop view: today's shift and key figures on the left, the next 14 days as a colored list on the right">
 </p>
 
-## Warum
+## Why
 
-Bezahlte Schichtkalender-Apps kosten je nach Anbieter etwa 3 bis 10 Euro oder ein Abo, zeigen Werbung oder verlangen ein Konto für Cloud-Sync. Offene Alternativen gibt es kaum, und wenn, dann nur für Android, ohne Muster-Rechnung und ohne Kalender-Export. schicht. macht nur das eine: deinen eigenen Schichtplan zeigen, zählen und exportieren.
+Paid shift calendar apps cost roughly 3 to 10 euros or a subscription depending on the provider, show ads, or require an account for cloud sync. Open alternatives are rare, and those that exist are Android-only, without pattern calculation and without calendar export. schicht. does one thing: show, count and export your own shift schedule.
 
-## Funktionen
+## Features
 
-- **Schichtarten** mit Kürzel (1 bis 2 Zeichen), Name, Farbe, Beginn, Ende und Pause. Vorbelegt sind Früh, Spät und Nacht. `frei` und `urlaub` sind fest eingebaut
-- **Rhythmus** (Muster): eine Folge von 1 bis 56 Tagen und ein Startdatum für Tag 1. Fünf Vorlagen für häufige Rhythmen zum Start, danach Schicht wählen und Tage antippen, auch mitten in der Folge. Dazu eine Vorschau der nächsten 14 Tage
-- **Heute auf einen Blick**: deine Schicht groß in ihrer Farbe, nächster Dienst, nächster freier Tag, nächstes freies Wochenende, Stunden im Monat, wer aus dem Team heute Dienst hat und die nächsten 14 Tage als Liste
-- **Monatskalender**: jeder Tag in der Farbe seiner Schicht, heute markiert, vergangene Tage blasser, Monat vor und zurück, Sprung zu heute
-- **Ausnahmen**: Tag antippen und eine andere Schichtart, `frei` oder `urlaub` setzen. Im Kalender mit Punkt markiert, einzeln zurücksetzbar
-- **Monatsübersicht**: Anzahl je Schichtart, Urlaubs- und freie Tage, Arbeitsstunden als Spanne (netto mit Pause bis brutto ohne Pause)
-- **ICS-Export** für den Gerätekalender: Zeitraum wählbar, höchstens 24 Monate, ein Termin je Arbeitstag, Urlaub als ganzer Tag, freie Tage ohne Termin
-- **Team in der App**: Kolleginnen und Kollegen mit Name und Rhythmus anlegen (`wie mein rhythmus`, dann Startdatum verschieben), alle Pläne nebeneinander in der Wochenansicht. Kein Link, kein Konto, kein Server
-- **Schichttausch mit zwei Fingertipps**: Schicht antippen, `tauschen`, die Schicht der anderen Person antippen, bestätigen. Beide Pläne ändern sich sofort, auch an verschiedenen Tagen und zwischen zwei anderen Personen. Abgeben ohne Gegenschicht geht direkt aus dem Tagesblatt. Jeder Tausch lässt sich rückgängig machen, solange an den Tagen seither nichts geändert wurde
-- **Optional über mehrere Geräte**: Nutzt jemand schicht. auf dem eigenen Handy, schickst du deinen Plan als Link. Wer ihn öffnet, hat dich im Team. Auch ein Tausch lässt sich als Anfrage-Link schicken, die Antwort kommt als Link zurück, und schicht. prüft vorher, ob der Plan noch passt
-- **Sicherung** aller Daten als JSON-Datei inklusive Team, Import mit Prüfung, bei einer kaputten Datei bleibt alles unverändert
-- **Beispiel** beim ersten Start mit zwei erfundenen Personen im Team, als `Beispiel` markiert und mit einem Klick entfernbar
-- Hell und dunkel, funktioniert offline, installierbar als App
+- **Shift types** with a short code (1 to 2 characters), name, color, start, end and break. Early, late and night are preset. `frei` ("off") and `urlaub` ("vacation") are built in
+- **Rotation** (pattern): a sequence of 1 to 56 days and a start date for day 1. Five templates for common rotations to get started, then pick a shift and tap days, also in the middle of the sequence. Plus a preview of the next 14 days
+- **Today at a glance:** your shift in large type in its color, next shift, next day off, next free weekend, hours this month, who from the team is on duty today, and the next 14 days as a list
+- **Month calendar:** each day in the color of its shift, today marked, past days faded, month forward and back, jump to today
+- **Exceptions:** tap a day and set a different shift type, `frei` or `urlaub`. Marked with a dot in the calendar, can be reset one by one
+- **Monthly summary:** count per shift type, vacation and days off, working hours as a range (net with break to gross without break)
+- **ICS export** for your device calendar: choose the period, at most 24 months, one event per working day, vacation as an all-day event, no events for days off
+- **Team in the app:** add colleagues with name and rotation (`wie mein rhythmus` ("same as my rotation"), then shift the start date), all schedules side by side in the week view. No link, no account, no server
+- **Shift swap in two taps:** tap a shift, `tauschen` ("swap"), tap the other person's shift, confirm. Both schedules change at once, also on different days and between two other people. Giving a shift away without taking one back works directly from the day sheet. Every swap can be undone as long as nothing has changed on those days since
+- **Optional across devices:** if someone uses schicht. on their own phone, you send your schedule as a link. Whoever opens it has you in their team. A swap can also be sent as a request link, the answer comes back as a link, and schicht. checks first whether the schedule still matches
+- **Backup** of all data as a JSON file including the team, import with validation; if the file is broken, nothing changes
+- **Example** on first start with two made-up people in the team, marked as `Beispiel` ("example") and removable with one click
+- Light and dark mode, works offline, installable as an app
 
-Bewusst nicht dabei: Konto, Server und automatische Synchronisation (das widerspricht dem Prinzip, dass alles auf deinem Gerät bleibt), Dienstplanung durch Arbeitgeber, Freigabe durch eine Leitung, Prüfung von Ruhezeiten oder Arbeitsrecht, Lohn- und Zuschlagsrechnung, Feiertage, Musterwechsel ab Datum, ICS-Import, Erinnerungen.
+Deliberately left out: account, server and automatic sync (that would contradict the principle that everything stays on your device), roster planning by employers, approval by a manager, checks of rest periods or labor law, pay and bonus calculation, public holidays, pattern changes from a date onwards, ICS import, reminders.
 
-## Datenschutz
+## Privacy
 
-Nichts verlässt dein Gerät. schicht. hat keinen Server, kein Konto, keine Analyse, keine Werbung und lädt nichts aus dem Netz nach, auch keine Schriften. Muster, Ausnahmen, Schichtarten und die Personen im Team liegen nur im lokalen Speicher deines Browsers (`localStorage`). Exporte, Sicherungen und Team-Links entstehen nur, wenn du sie selbst auslöst, und gehen nur dorthin, wohin du sie schickst.
+Nothing leaves your device. schicht. has no server, no account, no analytics, no ads and loads nothing from the network, not even fonts. Pattern, exceptions, shift types and the people in your team are stored only in your browser's local storage (`localStorage`). Exports, backups and team links are only created when you trigger them yourself, and they only go where you send them.
 
-Weil die Daten nur im Browser liegen: Wer die Websitedaten löscht, löscht auch seinen Plan. Mach deshalb ab und zu eine Sicherung.
+Because the data lives only in the browser: if you clear the site data, your schedule is gone too. Make a backup now and then.
 
-Team-Links enthalten deinen Namen, deine Schichtarten, dein Muster und deine Ausnahmen von etwa zwei Monaten zurück bis gut ein Jahr voraus. Die Daten stehen im Teil der Adresse hinter `#`, den der Browser nie an den Webserver schickt. Sie reisen aber über den Weg, den du wählst (Messenger, Mail), und wer den Link hat, kann den Plan lesen. Teil ihn nur mit deinem Team. Die Links sind nicht signiert: schicht. prüft Aufbau und Zusammenhang, kann aber nicht beweisen, wer einen Link erstellt hat.
+Team links contain your name, your shift types, your pattern and your exceptions from about two months back to a bit more than a year ahead. The data sits in the part of the address after `#`, which the browser never sends to the web server. It does travel through whatever channel you choose (messenger, email), and anyone with the link can read the schedule. Share it only with your team. The links are not signed: schicht. checks structure and consistency, but cannot prove who created a link.
 
-## Installation
+## Install
 
-schicht. ist eine statische Web-App. Es gibt keinen Build-Schritt und keine Abhängigkeiten.
+schicht. is a static web app. There is no build step and there are no dependencies.
 
-1. Den Ordner auf einen beliebigen statischen Host legen (eigener Webspace, GitHub Pages, Netlify, ein Raspberry Pi). Für die Installation als App ist HTTPS nötig.
-2. Die Adresse im Handybrowser öffnen.
-3. Im Browsermenü **Zum Startbildschirm hinzufügen** wählen. Danach startet schicht. wie eine App und funktioniert auch ohne Netz.
+1. Put the folder on any static host (your own web space, GitHub Pages, Netlify, a Raspberry Pi). Installing it as an app needs HTTPS.
+2. Open the address in your phone's browser.
+3. In the browser menu choose **Zum Startbildschirm hinzufügen** ("Add to Home Screen"). After that schicht. starts like an app and also works without a network.
 
-Lokal testen:
+Test locally:
 
 ```
 python3 -m http.server 8000
 ```
 
-Dann `http://localhost:8000` im Browser öffnen.
+Then open `http://localhost:8000` in your browser.
 
-## Wie gerechnet wird
+## How the math works
 
-Die Rechenfunktionen stehen als reine Funktionen in `logik.js`, ohne DOM. Kalendertage werden nur über `Date.UTC` gerechnet, damit eine Zeitumstellung keinen Tag verschiebt.
+The calculations are pure functions in `logik.js`, without a DOM. Calendar days are computed only via `Date.UTC`, so a daylight saving change never shifts a day.
 
-**1. Welche Schicht an einem Tag?** Gibt es für den Tag eine Ausnahme, gilt sie. Sonst gilt `folge[index]` mit `index = ((Tage seit Start) mod Länge + Länge) mod Länge`. Dadurch funktioniert das Muster auch vor dem Startdatum.
-Beispiel mit `F F S S N N - - - -` ab 5.1.2026: Der 9.1. liegt 4 Tage nach dem Start, Index 4, also `N`. Der 1.1. liegt 4 Tage davor, Index 6, also frei.
+**1. Which shift on a given day?** If the day has an exception, it applies. Otherwise `folge[index]` applies, with `index = ((days since start) mod length + length) mod length`. This way the pattern also works before the start date.
+Example with `F F S S N N - - - -` from 5 Jan 2026 (F = early, S = late, N = night, - = off): 9 Jan is 4 days after the start, index 4, so `N`. 1 Jan is 4 days before, index 6, so off.
 
-**2. Dauer.** Dauer = (Ende minus Beginn + 24 h) mod 24 h. Sind Beginn und Ende gleich, zählt die Schicht 24 h. Netto = Dauer minus Pause. Ende kleiner oder gleich Beginn heißt: Ende am Folgetag. Eine Schicht gehört zu dem Tag, an dem sie beginnt.
+**2. Duration.** Duration = (end minus start + 24 h) mod 24 h. If start and end are equal, the shift counts as 24 h. Net = duration minus break. End less than or equal to start means: ends the next day. A shift belongs to the day it starts.
 
-**3. Monatsübersicht.** Gezählt wird je Schichtart, dazu Urlaub und frei. Die Stunden sind eine Spanne: unten netto (mit Pause), oben brutto (ohne Pause). Urlaub und freie Tage zählen keine Stunden.
-Beispiel Januar 2026 mit dem Muster oben: 18 Arbeitstage, brutto 18 mal 8 h = 144 h, netto 18 mal 7,5 h = 135 h. Angezeigt wird `135 bis 144 h`.
+**3. Monthly summary.** Counted per shift type, plus vacation and off. Hours are a range: low end net (with break), high end gross (without break). Vacation and days off count no hours.
+Example January 2026 with the pattern above: 18 working days, gross 18 × 8 h = 144 h, net 18 × 7.5 h = 135 h. Shown as `135 bis 144 h` ("135 to 144 h").
 
-**4. ICS-Datei.** Ein `VEVENT` je Arbeitstag mit lokaler Zeit ohne Zeitzone, bei Nachtschichten mit Ende am Folgetag. Urlaub wird ein ganztägiger Termin. Die UID ist fest (`datum-kürzel@schicht`), Zeilenenden sind CRLF, lange Zeilen werden bei 75 Oktetten gefaltet.
+**4. ICS file.** One `VEVENT` per working day in local time without a time zone, for night shifts with the end on the next day. Vacation becomes an all-day event. The UID is fixed (`datum-kürzel@schicht`), line endings are CRLF, long lines are folded at 75 octets.
 
-**5. Team-Links.** Ein Link ist `adresse#t=` plus JSON in UTF-8, kodiert als base64url ohne `=`. Typen: `plan` (dein Plan), `tausch` (Anfrage plus dein Plan), `antwort` (angenommen oder abgelehnt plus Plan der antwortenden Person). Jeder Link wird vor der Übernahme vollständig geprüft. Ein älterer Plan überschreibt nie einen neueren.
+**5. Team links.** A link is `adresse#t=` plus JSON in UTF-8, encoded as base64url without `=`. Types: `plan` (your schedule), `tausch` (swap request plus your schedule), `antwort` (accepted or declined plus the responder's schedule). Every link is fully validated before it is applied. An older schedule never overwrites a newer one.
 
-**6. Tausch.** Max hat `F F S S N N - - - -` ab 5.1.2026, Erika das gleiche Muster ab 10.1.2026. Max gibt den 6.1. (früh) ab und übernimmt dafür Erikas 12.1. (spät). Danach: Max am 6.1. frei, am 12.1. spät, Januar `F` 5, `S` 7, `N` 6, weiter `135 bis 144 h`. Erika am 6.1. früh, am 12.1. frei, Januar `F` 8, `S` 5, `N` 6, weiter `142,5 bis 152 h`. Gibt es die fremde Schichtart im eigenen Plan nicht (gleiche Zeiten), wird sie angelegt.
+**6. Swap.** Max has `F F S S N N - - - -` from 5 Jan 2026, Erika the same pattern from 10 Jan 2026. Max gives away 6 Jan (early) and takes Erika's 12 Jan (late) in return. Afterwards: Max is off on 6 Jan, late on 12 Jan, January `F` 5, `S` 7, `N` 6, still `135 bis 144 h`. Erika is early on 6 Jan, off on 12 Jan, January `F` 8, `S` 5, `N` 6, still `142,5 bis 152 h`. If the other person's shift type does not exist in your own schedule (same times), it is created.
 
-**7. Tausch in der App.** Gleiche Rechnung wie 6, nur auf beiden Plänen gleichzeitig. schicht. merkt sich, welche Ausnahmen an den beiden Tagen vorher und nachher galten. `rückgängig` stellt den Zustand von vorher wieder her, aber nur, wenn beide Pläne an den Tagen noch genau so aussehen wie direkt nach dem Tausch.
+**7. Swap in the app.** Same calculation as 6, just on both schedules at once. schicht. remembers which exceptions applied on both days before and after. `rückgängig` ("undo") restores the previous state, but only if both schedules on those days still look exactly as they did right after the swap.
 
-**8. Freies Wochenende.** Gesucht wird ab dem nächsten Samstag (am Samstag selbst ab heute) der erste Samstag, an dem Samstag und Sonntag frei oder Urlaub sind, höchstens ein Jahr voraus. Mit dem Muster oben und heute 5.1.2026 ist das der 31.1.
+**8. Free weekend.** The search starts from the next Saturday (on a Saturday itself, from today) and finds the first Saturday where Saturday and Sunday are both off or vacation, at most one year ahead. With the pattern above and today being 5 Jan 2026, that is 31 Jan.
 
-**Grenzen.** Ein Team in der App kennt nur, was auf diesem Gerät eingetragen ist. Ein Tausch ändert die Pläne hier, nicht auf den Handys der anderen. Pläne von anderen Geräten sind Momentaufnahmen und werden nur aktuell, wenn jemand seinen Link neu schickt. Nimmt eine Person an, die Antwort kommt aber nie an, steht der Tausch nur bei ihr. Die Übersicht rechnet mit Planzeiten. Eine Nachtschicht über die Zeitumstellung dauert real eine Stunde mehr oder weniger. Ändert man Muster oder Startdatum, ändert sich auch die Vergangenheit. Wie sich Kalender-Apps beim erneuten Import gleicher Termine verhalten, ist unterschiedlich: Lösch vor einem neuen Import die alten Termine.
+**Limits.** A team in the app only knows what is entered on this device. A swap changes the schedules here, not on the other people's phones. Schedules from other devices are snapshots and only get updated when someone sends their link again. If a person accepts but the answer never arrives, the swap exists only on their side. The summary uses planned times. A night shift across a daylight saving change really lasts one hour more or less. Changing the pattern or start date also changes the past. Calendar apps behave differently when the same events are imported again: delete the old events before a new import.
 
-Getestet wird mit Node, ohne Browser und ohne Pakete:
+Tests run with Node, without a browser and without packages:
 
 ```
 node --test test-calc.js
 ```
 
-## Lizenz
+## License
 
-GNU Affero General Public License v3.0 (AGPL-3.0), siehe `LICENSE`.
+GNU Affero General Public License v3.0 (AGPL-3.0), see `LICENSE`.
+
+**Deutsch:** schicht. ist ein Schichtkalender und Schichtplan für Wechselschicht (Früh, Spät, Nacht) mit Team, Schichttausch und Kalender-Export, offline, ohne Konto und ohne Werbung.
 
 ---
 
-**gedacht.gemacht.** Kleine, ehrliche Software. Alles bleibt auf deinem Gerät.
+**gedacht.gemacht.** Small, honest software. Everything stays on your device. · [More projects](https://github.com/gedachtgemacht)
